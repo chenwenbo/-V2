@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>梯度智培 · 科技服务机构AI经营操作系统</title>
+  <link rel="stylesheet" href="assets/app.css" />
+</head>
+<body>
+  <!-- 顶部栏 -->
+  <header class="topbar">
+    <div class="topbar-left">
+      <button class="icon-btn" id="navToggle" title="收起/展开导航">☰</button>
+      <div class="brand">
+        <div class="brand-mark">梯</div>
+        <div class="brand-text">
+          <div class="brand-name">梯度智培</div>
+          <div class="brand-sub">科技服务机构 · AI经营操作系统</div>
+        </div>
+      </div>
+    </div>
+    <div class="topbar-center">
+      <div class="global-search">
+        <span class="gs-icon">🔍</span>
+        <input type="text" id="globalSearch" placeholder="搜索企业 / 商机 / 政策 / 任务 / 服务产品…" />
+        <kbd>⌘K</kbd>
+      </div>
+    </div>
+    <div class="topbar-right">
+      <button class="icon-btn" id="aiAssistBtn" title="AI 助手">✨ AI助手</button>
+      <button class="icon-btn notif-btn" id="notifBtn" title="提醒">🔔<span class="notif-dot">5</span></button>
+      <div class="role-switcher" id="roleSwitcher">
+        <span class="role-avatar" id="roleAvatar">负</span>
+        <div class="role-meta">
+          <div class="role-name" id="roleName">机构负责人</div>
+          <div class="role-org">星耀科技服务集团</div>
+        </div>
+        <span class="role-caret">▾</span>
+        <div class="role-menu" id="roleMenu"></div>
+      </div>
+    </div>
+  </header>
+
+  <div class="layout">
+    <!-- 侧边导航 -->
+    <aside class="sidebar" id="sidebar">
+      <nav class="nav" id="nav"></nav>
+      <div class="sidebar-footer">
+        <div class="sf-line">版本 V1.0 · 2026-06</div>
+        <div class="sf-line">原型 · Prototype</div>
+      </div>
+    </aside>
+
+    <!-- 主内容 -->
+    <main class="main" id="main">
+      <div class="page-loading" id="pageLoading">加载中…</div>
+    </main>
+  </div>
+
+  <!-- AI 助手抽屉 -->
+  <div class="drawer-mask" id="drawerMask"></div>
+  <aside class="ai-drawer" id="aiDrawer"></aside>
+
+  <!-- 通用模态层 -->
+  <div class="modal-mask" id="modalMask">
+    <div class="modal" id="modal"></div>
+  </div>
+
+  <!-- Toast -->
+  <div class="toast-wrap" id="toastWrap"></div>
+
+  <!-- 脚本 -->
+  <script src="js/data.js"></script>
+  <script src="js/components.js"></script>
+  <script src="js/router.js"></script>
+
+  <!-- 页面模块 -->
+  <script src="js/pages/dashboard.js"></script>
+  <script src="js/pages/prospect-push.js"></script>
+  <script src="js/pages/enterprise-pool.js"></script>
+  <script src="js/pages/enterprise-profile.js"></script>
+  <script src="js/pages/survey-tasks.js"></script>
+  <script src="js/pages/opportunity.js"></script>
+  <script src="js/pages/hosting.js"></script>
+  <script src="js/pages/hosting-detail.js"></script>
+  <script src="js/pages/policy-calendar.js"></script>
+  <script src="js/pages/policy-library.js"></script>
+  <script src="js/pages/dynamics.js"></script>
+  <script src="js/pages/project-plan.js"></script>
+  <script src="js/pages/gap-tasks.js"></script>
+  <script src="js/pages/writing-tasks.js"></script>
+  <script src="js/pages/writing-editor.js"></script>
+  <script src="js/pages/review-ai.js"></script>
+  <script src="js/pages/review-expert.js"></script>
+  <script src="js/pages/review-library.js"></script>
+  <script src="js/pages/agents.js"></script>
+  <script src="js/pages/agent-detail.js"></script>
+  <script src="js/pages/service-products.js"></script>
+  <script src="js/pages/task-center.js"></script>
+  <script src="js/pages/data-objects.js"></script>
+  <script src="js/pages/governance.js"></script>
+  <script src="js/pages/mvp-roadmap.js"></script>
+  <script src="js/pages/kpi.js"></script>
+  <script src="js/pages/risk.js"></script>
+
+  <script src="js/app.js"></script>
+</body>
+</html>
